@@ -1,14 +1,19 @@
 {
-  "name": "eslint-prettier-test-npm",
-  "private": true,
-  "dependencies": {
-    "@rails/ujs": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/actioncable": "^6.0.0"
-  },
-  "version": "0.1.0",
-  "devDependencies": {
-    "eslint": "^8.38.0",
-    "eslint-plugin-vue": "^9.10.0"
-  }
+	"name": "eslint-prettier-test-npm",
+	"private": true,
+	"scripts": {
+		"lint-fix": "eslint --fix 'app/javascript/packs/**/*.{js,vue}' && prettier --write 'app/javascript/packs/**/*.{js,vue}'"
+	},
+	"dependencies": {
+		"@rails/ujs": "^6.0.0",
+		"@rails/activestorage": "^6.0.0",
+		"@rails/actioncable": "^6.0.0"
+	},
+	"version": "0.1.0",
+	"devDependencies": {
+		"eslint": "^8.38.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-vue": "^9.10.0",
+		"prettier": "^2.8.7"
+	}
 }
